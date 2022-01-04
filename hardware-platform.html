@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitoring Device Design | HtCtW-2021-marine-group-8</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/xmlrpc.php">
+
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//uk.files.campus.edublogs.org.s3.amazonaws.com' />
+<link rel="alternate" type="application/rss+xml" title="HtCtW-2021-marine-group-8 &raquo; Feed" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/feed/" />
+<link rel="alternate" type="application/rss+xml" title="HtCtW-2021-marine-group-8 &raquo; Comments Feed" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/reflect.ucl.ac.uk\/htctw-2021-marine-marine-group-8\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='dashicons-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/css/dashicons.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/css/admin-bar.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simone-style-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/style.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simone-layout-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/layouts/content-sidebar.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simone-google-fonts-css'  href='//fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C400italic%2C700%2C900%2C900italic%7CPT+Serif%3A400%2C700%2C400italic%2C700italic&#038;ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='simone_fontawesome-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/fonts/font-awesome/css/font-awesome.min.css?ver=5.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-responsive-tables-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/plugins/tablepress/eb-mods/tablepress-responsive-tables/css/responsive.dataTables.min.css?ver=1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/plugins/tablepress/css/default.min.css?ver=1.12' type='text/css' media='all' />
+<!--[if !IE]><!-->
+<link rel='stylesheet' id='tablepress-responsive-tables-flip-css'  href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/plugins/tablepress/eb-mods/tablepress-responsive-tables/css/tablepress-responsive-flip.min.css?ver=1.5' type='text/css' media='all' />
+<!--<![endif]-->
+<script type='text/javascript' id='jquery-core-js-extra'>
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/reflect.ucl.ac.uk\/htctw-2021-marine-marine-group-8\/wp-admin\/admin-ajax.php";
+var msreader_featured_posts = {"saving":"Saving...","post_featured":"This post is featured","feature":"Feature","unfeature":"Unfeature"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/picturefill.min.js?ver=20140512' id='simone-picturefill-js'></script>
+<link rel="https://api.w.org/" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-json/" /><link rel="alternate" type="application/json" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-json/wp/v2/pages/25" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="University College London " />
+
+<link rel="canonical" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/hardware-platform/" />
+<link rel='shortlink' href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/?p=25' />
+<link rel="alternate" type="application/json+oembed" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-json/oembed/1.0/embed?url=https%3A%2F%2Freflect.ucl.ac.uk%2Fhtctw-2021-marine-marine-group-8%2Fhardware-platform%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-json/oembed/1.0/embed?url=https%3A%2F%2Freflect.ucl.ac.uk%2Fhtctw-2021-marine-marine-group-8%2Fhardware-platform%2F&#038;format=xml" />
+
+        <script type="text/javascript">
+            var jQueryMigrateHelperHasSentDowngrade = false;
+
+			window.onerror = function( msg, url, line, col, error ) {
+				// Break out early, do not processing if a downgrade reqeust was already sent.
+				if ( jQueryMigrateHelperHasSentDowngrade ) {
+					return true;
+                }
+
+				var xhr = new XMLHttpRequest();
+				var nonce = '904de187c5';
+				var jQueryFunctions = [
+					'andSelf',
+					'browser',
+					'live',
+					'boxModel',
+					'support.boxModel',
+					'size',
+					'swap',
+					'clean',
+					'sub',
+                ];
+				var match_pattern = /\)\.(.+?) is not a function/;
+                var erroredFunction = msg.match( match_pattern );
+
+                // If there was no matching functions, do not try to downgrade.
+                if ( typeof erroredFunction !== 'object' || typeof erroredFunction[1] === "undefined" || -1 === jQueryFunctions.indexOf( erroredFunction[1] ) ) {
+                    return true;
+                }
+
+                // Set that we've now attempted a downgrade request.
+                jQueryMigrateHelperHasSentDowngrade = true;
+
+				xhr.open( 'POST', 'https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/admin-ajax.php' );
+				xhr.setRequestHeader( 'Content-Type', 'application/x-www-form-urlencoded' );
+				xhr.onload = function () {
+					var response,
+                        reload = false;
+
+					if ( 200 === xhr.status ) {
+                        try {
+                        	response = JSON.parse( xhr.response );
+
+                        	reload = response.data.reload;
+                        } catch ( e ) {
+                        	reload = false;
+                        }
+                    }
+
+					// Automatically reload the page if a deprecation caused an automatic downgrade, ensure visitors get the best possible experience.
+					if ( reload ) {
+						location.reload();
+                    }
+				};
+
+				xhr.send( encodeURI( 'action=jquery-migrate-downgrade-version&_wpnonce=' + nonce ) );
+
+				// Suppress error alerts in older browsers
+				return true;
+			}
+        </script>
+
+		    <style type="text/css">
+        .site-branding {
+            background: ;
+        }
+
+        .category-list a:hover,
+        .entry-meta a:hover,
+        .tag-links a:hover,
+        .widget-area a:hover,
+        .nav-links a:hover,
+        .comment-meta a:hover,
+        .continue-reading a,
+        .entry-title a:hover,
+        .entry-content a,
+        .comment-content a {
+            color: ;
+        }
+
+        .border-custom {
+            border:  solid 1px;
+        }
+
+    </style>
+    <style type="text/css">
+/* <![CDATA[ */
+img.latex { vertical-align: middle; border: none; }
+/* ]]> */
+</style>
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/images/pattern.svg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+	<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	<style type="text/css">#wp-admin-bar-abm-login{display:block!important}body .wp-video-shortcode video,body video.wp-video-shortcode{margin:0;padding:0;background:0 0;border:none;box-shadow:none;min-width:0;height:auto;min-height:0}.screen-reader-text:not(button){clip:rect(1px,1px,1px,1px);position:absolute!important;height:1px;width:1px;overflow:hidden}</style></head>
+
+<body class="page-template-default page page-id-25 logged-in admin-bar no-customize-support custom-background">
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+                            <div class="site-branding">                    <div class="title-box">
+			<h1 class="site-title"><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/" rel="home">HtCtW-2021-marine-group-8</a></h1>
+			<h2 class="site-description">Our interdisciplinary engineering solution for monitoring the marine ecosystem of Lake Bardawil in Sinai, Egypt.</h2>
+                    </div>
+		</div>
+
+		<nav id="site-navigation" class="main-navigation clear" role="navigation">
+                    <h1 class="menu-toggle"><a href="#">Menu</a></h1>
+
+			<div class="menu-tab-container"><ul id="menu-tab" class="menu"><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-22"><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/">Overview</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-26"><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/hardware-platform/" aria-current="page">Monitoring Device Design</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/software-architecture/">Software System Architecture</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/circuit/">Electrical Design</a></li>
+</ul></div>
+                        <div class="search-toggle">
+                            <i class="fa fa-search"></i>
+                            <a href="#search-container" class="screen-reader-text">Search</a>
+                        </div>
+                        
+
+		</nav><!-- #site-navigation -->
+
+                <div id="header-search-container" class="search-box-wrapper clear hide">
+			<div class="search-box clear">
+				<form role="search" method="get" class="search-form" action="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>			</div>
+		</div>
+
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-25" class="post-25 page type-page status-publish hentry">
+        	<header class="entry-header">
+		<h1 class="entry-title">Monitoring Device Design</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<h2>System Needs</h2>
+<p>In order to be compatible with the other parts of our design and the theme of the whole project, the hardware platform is expected to meet the following needs:</p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Wireless communication and data transfer ability</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="2" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1">Waterproof</li>
+<li><span data-contrast="auto">Corrosion resistant (inert/ no reaction with salinity, pH, dissolved oxygen, nitrate contents)</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+<li><span data-contrast="auto">High strength (Withstanding the turbidity of currents and potential knocks)</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+<li><span data-contrast="auto">Must not be big in size (does not obstruct the ecosystem and fishing activities)</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+<li><span data-contrast="auto">Sample testing should ideally be conducted in a continuous time period and data is transferred to the software systems (i.e. samples do not need to be sent to the labs)</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559685&quot;:540,&quot;335559739&quot;:160,&quot;335559740&quot;:240}"> </span></li>
+</ul>
+<h2>Design Diagram:</h2>
+<p><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/files/2021/06/Hardware-system-design-101.jpg"><img loading="lazy" class="alignnone wp-image-63" src="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/files/2021/06/Hardware-system-design-101.jpg" alt="Hardware system design" width="751" height="613" srcset="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/files/2021/06/Hardware-system-design-101.jpg 1025w, https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/files/2021/06/Hardware-system-design-101-300x245.jpg 300w, https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/files/2021/06/Hardware-system-design-101-768x626.jpg 768w, https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/files/2021/06/Hardware-system-design-101-601x490.jpg 601w" sizes="(max-width: 751px) 100vw, 751px" /></a></p>
+<h2>Key Components Explanations:</h2>
+<table style="font-weight: 400; height: 1550px;" width="909" data-tablestyle="MsoTableGrid" data-tablelook="1184" aria-rowcount="7">
+<tbody>
+<tr aria-rowindex="1">
+<td data-celllook="65536">
+<h3><b><span data-contrast="auto">Components</span></b></h3>
+</td>
+<td data-celllook="65536">
+<h3><b><span data-contrast="auto">         Details</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></h3>
+</td>
+</tr>
+<tr aria-rowindex="2">
+<td data-celllook="65536"><span data-contrast="auto"><strong>Microcontroller control centre</strong> </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></td>
+<td data-celllook="0">
+<ul>
+<li style="text-align: left;"><span data-contrast="auto">Consist of electrical circuits with control systems which processes the electrical signal from the sensors (signal amplification and noise filtering) and sends the data to the computers or cloud systems through the antenna</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+</ul>
+</td>
+</tr>
+<tr aria-rowindex="3">
+<td data-celllook="65536"><strong>Probe sensors <a href="https://www.researchgate.net/publication/279921892_WSN_for_Real_Time_Sea_Water_Quality_Monitoring">[1]</a><a href="https://www.frontiersin.org/articles/10.3389/fmars.2016.00213/full">[2]</a> (Secondary transducer: physical properties converted to electrical signals)</strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></td>
+<td data-celllook="0">
+<ul>
+<li><b><span data-contrast="auto">Temperature:</span></b><span data-contrast="auto"> platinum resistive sensor (stable, linear output, chemically inert and resistant to contamination</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+<li><b><span data-contrast="auto">pH:</span></b><span data-contrast="auto"> combination of electrodes to produce potential difference with Wheatstone bridge configuration for temperature compensation</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+<li><b><span data-contrast="auto">Dissolved oxygen: </span></b><span data-contrast="auto">Galvanic cell which produces voltage output proportional to the concentration of dissolved oxygen</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+<li><b><span data-contrast="auto">Salinity:</span></b><span data-contrast="auto">  same as pH electrodes which measures conductivity of the sea</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+<li><b><span data-contrast="auto">Greenness (pigment concentration) and oil (pollution): </span></b><span data-contrast="auto">Intensity of reflected UV fluorescence is measured to determine the concentration of algae</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> and oil content</span></li>
+</ul>
+</td>
+</tr>
+<tr aria-rowindex="4">
+<td data-celllook="65536"><strong>Floating platform (casing) </strong></td>
+<td data-celllook="0">
+<ul>
+<li><span data-contrast="auto">Fibre reinforced polymers used as casing material: light, tough, strong, high fatigue strength, very high melting point, corrosion resistant and easily manufacturable</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+</ul>
+</td>
+</tr>
+<tr aria-rowindex="5">
+<td data-celllook="65536"><strong>Solar panel </strong></td>
+<td data-celllook="0">
+<ul>
+<li><span data-contrast="auto">Renewable power source and self-cleaning glass surface via rain fall</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+</ul>
+</td>
+</tr>
+<tr aria-rowindex="6">
+<td data-celllook="65536"><strong>Realtime fisheye camera </strong></td>
+<td data-celllook="0">
+<ul>
+<li><span data-contrast="auto">Continuously captures the condition of the ecosystem in order to monitor biodiversity. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+<li><span data-contrast="auto">Fisheye lenses correct the distortion of images due to the different refractive index in the sea</span><span data-contrast="auto">. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+<li><span data-contrast="auto">Object detection algorithms (e.g. OpenCV) integrated to account for the numbers of each species. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+</ul>
+</td>
+</tr>
+<tr aria-rowindex="7">
+<td data-celllook="65536"><strong>Anchor</strong><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></td>
+<td data-celllook="0">
+<ul>
+<li><span data-contrast="auto">Concrete core with vinyl plastic casing <a href="https://www.researchgate.net/publication/337432084_Effect_of_water_and_seawater_on_mechanical_properties_of_fiber_reinforced_polymer_composites_a_review_for_amphibious_aircraft_float_development">[3]</a></span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:259}"> </span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>References:</h2>
+<p><span data-contrast="auto">[1] V. Annese, D. Bari, and G. Biccario, “Wireless Sensor Network for Real Time Sea Water Quality Monitoring,” </span><i><span data-contrast="auto">Electrical and Information Engineering</span></i><span data-contrast="auto">, vol. 1, no. 4, Jul. 2014, doi: 10.13140/RG.2.1.2583.9848.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">[2] R. Danovaro </span><i><span data-contrast="auto">et al.</span></i><span data-contrast="auto">, “Implementing and Innovating Marine Monitoring Approaches for Assessing Marine Environmental Status,” </span><i><span data-contrast="auto">Frontiers in Marine Science</span></i><span data-contrast="auto">, vol. 3, no. 1, Nov. 2016, doi: 10.3389/fmars.2016.00213.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+<p><span data-contrast="auto">[3] K. Abdurohman and M. Adhitya, “Effect of water and seawater on mechanical properties of fiber reinforced polymer composites: a review for amphibious aircraft float development,” </span><i><span data-contrast="auto">IOP Conference Series: Materials Science and Engineering</span></i><span data-contrast="auto">, vol. 694, no. 1, p. 012035, Nov. 2019, doi: 10.1088/1757-899x/694/1/012035.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:160,&quot;335559740&quot;:259}"> </span></p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="meta-2" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+			<li><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/">Site Admin</a></li>			<li><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-login.php?action=logout&#038;_wpnonce=a18dca0efe">Log out</a></li>
+			<li><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://reflect.ucl.ac.uk/" title="Powered by Reflect at UCL">Reflect at UCL</a></li>
+						</ul>
+</aside>	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+            
+<div id="supplementary">
+	<div id="footer-widgets" class="footer-widgets widget-area clear" role="complementary">
+		<aside id="text-3" class="widget widget_text"><h1 class="widget-title">Proudly designed by UCL Engineering with ❤️</h1>			<div class="textwidget"><p>Zhaoxuan &#8220;<em>Tony</em>&#8221; Wu | <em>Information Management for Business</em></p>
+<p>Ruotong Li | <em>Electronic and Electrical Engineering</em></p>
+<p>Yash Patankar | <em>Chemical Engineering</em></p>
+<p>Qiuer Zhu | <em>Computer Science</em></p>
+<div>Khai Horng Siaw |<em> Mechanical Engineering</em></div>
+<p>Weixuan Xing | <em>Biomedical Engineering</em></p>
+<p>Jinghan Wang | <em>Mechanical Engineering</em></p>
+<p>&nbsp;</p>
+</div>
+		</aside>	</div><!-- #footer-sidebar -->
+</div><!-- #supplementary -->		<div class="site-info">
+						Proudly powered by <a href="http://wordpress.org/" rel="generator">WordPress</a>			<span class="sep"> | </span>
+			Theme: <a href="http://wordpress.org/themes/simone/" rel="nofollow">Simone</a> by <a href="http://mor10.com/" rel="designer nofollow">mor10.com</a>		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<div id="global-footer-content" ><div id="global-footer-content-inner" ><style type="text/css">
+#ucl_global_footer {
+    background-color: #40403e;
+
+    color: #fff;
+    clear: left;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-size: 10px;
+	display: table;
+	width: 100%;
+    padding: 5px;
+}
+
+#ucl_global_footer_msg {
+	display: table-row;
+	color: #eee;
+}
+
+#ucl_footer {
+	display: table-row;
+	
+}
+
+#ucl_footer ul {
+	margin-top: 10px;
+	/* margin-left: -20px; */
+	}
+
+#ucl_footer ul li {
+display: inline;
+}
+
+.usepolicy {
+	display: table-row;
+	position: relative;
+	float: right;
+	margin-right: 30px;
+}
+.usepolicy a {
+	color:#eee;
+}
+
+.footer__links a{
+	color: #eee;
+}
+
+.list-inline--divided li:after {
+    content: "|";
+    margin-left: 10px;
+}
+
+#footer-content-eb {
+	display: none;
+}
+
+</style>
+
+<div id="ucl_global_footer">
+<div id="ucl_global_footer_msg">The Reflect Educational Blogging platform is provided by UCL to allow students and staff to blog for teaching and learning purposes. Any views expressed on these pages do not necessarily represent the views of the University.</div>
+<div id="ucl_footer">
+<ul class="footer__links list-inline footer__list list-unstyled list-inline--divided">
+            <li class="footer__item">
+                Copyright © 2018 UCL 
+            </li>
+            <li class="footer__item">
+                <a href="http://www.ucl.ac.uk/foi">Freedom of Information</a>
+            </li>
+            <li class="footer__item">
+                <a href="http://www.ucl.ac.uk/accessibility">Accessibility</a>
+            </li>
+            <li class="footer__item">
+                <a href="http://www.ucl.ac.uk/legal-services/privacy">Privacy and Cookies</a>
+            </li>
+             <li>
+                <a href="http://www.ucl.ac.uk/procurement/suppliers/slavery-stmt">Slavery statement</a>
+           </li>
+            <li class="footer__item">
+                <a href="http://www.ucl.ac.uk/contact-list">Contact Us</a>
+            </li>
+			<li class="footer__item">
+				<a href="https://wiki.ucl.ac.uk/display/ReflectBlog/Reflect+-+Educational+Blogging+Policy" target="_blank">Reflect policy</a>
+			</li>
+<li class="footer__item">
+				<a href="http://www.ucl.ac.uk/disclaimer" target="_blank">Disclaimer</a>
+			</li>
+</ul>
+</div>
+</div>
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"https://wiki.ucl.ac.uk/display/ReflectBlog/Reflect+-+Educational+Blogging+Policy#Reflect-EducationalBloggingPolicy-CookiePolicy","theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin --></div></div><script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/js/hoverintent-js.min.js?ver=2.2.1' id='hoverintent-js-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/js/admin-bar.min.js?ver=5.8.2' id='admin-bar-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/navigation.js?ver=20120206' id='simone-navigation-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/hide-search.js?ver=20120206' id='simone-search-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/superfish.min.js?ver=20140328' id='simone-superfish-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/superfish-settings.js?ver=20140328' id='simone-superfish-settings-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/masonry-settings.js?ver=20140401' id='simone-masonry-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/enquire.min.js?ver=20140429' id='simone-enquire-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-content/themes/simone/js/skip-link-focus-fix.js?ver=20130115' id='simone-skip-link-focus-fix-js'></script>
+<script type='text/javascript' src='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-includes/js/wp-embed.min.js?ver=5.8.2' id='wp-embed-js'></script>
+		<div id="wpadminbar" class="nojq nojs">
+							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar">
+				<ul id='wp-admin-bar-root-default' class="ab-top-menu"><li id='wp-admin-bar-my-sites' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-marine-class-blog/wp-admin/my-sites.php'>My Sites</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-my-sites-list' class="ab-submenu"><li id='wp-admin-bar-blog-5111' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-marine-class-blog/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>How to Change the World 2020-21 Marine Environment Challenge</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5111-default' class="ab-submenu"><li id='wp-admin-bar-blog-5111-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-marine-class-blog/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5111-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-marine-class-blog/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5134' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-1/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>How to Change the World 2021 - Green the Sinai</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5134-default' class="ab-submenu"><li id='wp-admin-bar-blog-5134-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-1/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5134-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-1/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5135' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-10/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-10</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5135-default' class="ab-submenu"><li id='wp-admin-bar-blog-5135-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-10/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5135-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-10/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5136' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-11/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-11</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5136-default' class="ab-submenu"><li id='wp-admin-bar-blog-5136-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-11/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5136-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-11/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5137' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-12/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-12</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5137-default' class="ab-submenu"><li id='wp-admin-bar-blog-5137-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-12/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5137-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-12/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5138' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-13/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-13</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5138-default' class="ab-submenu"><li id='wp-admin-bar-blog-5138-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-13/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5138-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-13/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5139' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-14/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>How to Change the World </a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5139-default' class="ab-submenu"><li id='wp-admin-bar-blog-5139-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-14/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5139-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-14/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5140' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-15/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><img class="blavatar" src="https://reflect.ucl.ac.uk/htctw-2021-energy-group-15/wp-content/blogs.dir/5140/files/2021/06/cropped-unnamed-32x32.png" srcset="https://reflect.ucl.ac.uk/htctw-2021-energy-group-15/wp-content/blogs.dir/5140/files/2021/06/cropped-unnamed-32x32.png 2x" alt="" width="16" height="16" />HtCtW 2021-Energy Challenge-Group 15</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5140-default' class="ab-submenu"><li id='wp-admin-bar-blog-5140-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-15/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5140-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-15/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5141' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-16/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-16</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5141-default' class="ab-submenu"><li id='wp-admin-bar-blog-5141-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-16/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5141-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-16/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5142' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-17/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><img class="blavatar" src="https://reflect.ucl.ac.uk/htctw-2021-energy-group-17/wp-content/blogs.dir/5142/files/2021/06/cropped-Green-Travel-2-32x32.png" srcset="https://reflect.ucl.ac.uk/htctw-2021-energy-group-17/wp-content/blogs.dir/5142/files/2021/06/cropped-Green-Travel-2-32x32.png 2x" alt="" width="16" height="16" />How to Change the World</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5142-default' class="ab-submenu"><li id='wp-admin-bar-blog-5142-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-17/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5142-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-17/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5143' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-18/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-18</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5143-default' class="ab-submenu"><li id='wp-admin-bar-blog-5143-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-18/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5143-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-18/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5144' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-19/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><img class="blavatar" src="https://reflect.ucl.ac.uk/htctw-2021-energy-group-19/wp-content/blogs.dir/5144/files/2021/06/cropped-map-32x32.png" srcset="https://reflect.ucl.ac.uk/htctw-2021-energy-group-19/wp-content/blogs.dir/5144/files/2021/06/cropped-map-32x32.png 2x" alt="" width="16" height="16" />Energy Challenge - Group 19</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5144-default' class="ab-submenu"><li id='wp-admin-bar-blog-5144-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-19/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5144-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-19/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5145' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-2/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><img class="blavatar" src="https://reflect.ucl.ac.uk/htctw-2021-energy-group-2/wp-content/blogs.dir/5145/files/2021/06/cropped-MicrosoftTeams-image-32x32.png" srcset="https://reflect.ucl.ac.uk/htctw-2021-energy-group-2/wp-content/blogs.dir/5145/files/2021/06/cropped-MicrosoftTeams-image-32x32.png 2x" alt="" width="16" height="16" />How to Change the World: Energy - Group 2</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5145-default' class="ab-submenu"><li id='wp-admin-bar-blog-5145-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-2/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5145-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-2/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5146' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-20/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-20</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5146-default' class="ab-submenu"><li id='wp-admin-bar-blog-5146-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-20/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5146-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-20/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5147' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-3/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-3</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5147-default' class="ab-submenu"><li id='wp-admin-bar-blog-5147-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-3/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5147-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-3/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5148' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-4/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>Proposal of a Solar-Powered Reverse Osmosis Desalination Plant</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5148-default' class="ab-submenu"><li id='wp-admin-bar-blog-5148-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-4/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5148-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-4/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5149' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-5/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-5</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5149-default' class="ab-submenu"><li id='wp-admin-bar-blog-5149-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-5/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5149-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-5/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5150' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-6/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><div class="blavatar"></div>HtCtW-2021-energy-group-6</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5150-default' class="ab-submenu"><li id='wp-admin-bar-blog-5150-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-6/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5150-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-6/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-blog-5151' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-7/wp-admin/'><span class="wp-admin-bar-arrow" aria-hidden="true"></span><img class="blavatar" src="https://reflect.ucl.ac.uk/htctw-2021-energy-group-7/wp-content/blogs.dir/5151/files/2021/06/cropped-Step-3_Reuse-sediments_edited-32x32.jpg" srcset="https://reflect.ucl.ac.uk/htctw-2021-energy-group-7/wp-content/blogs.dir/5151/files/2021/06/cropped-Step-3_Reuse-sediments_edited-32x32.jpg 2x" alt="" width="16" height="16" />HtCtW 2021 - Energy</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-blog-5151-default' class="ab-submenu"><li id='wp-admin-bar-blog-5151-d'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-7/wp-admin/'>Dashboard</a></li><li id='wp-admin-bar-blog-5151-v'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-energy-group-7/'>Visit Site</a></li></ul></div></li><li id='wp-admin-bar-eb-show-all'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/index.php?page=i-my-sites'>Show All</a></li></ul></div></li><li id='wp-admin-bar-site-name' class="menupop"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/'>HtCtW-2021-marine-group-8</a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-site-name-default' class="ab-submenu"><li id='wp-admin-bar-dashboard'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/'>Dashboard</a></li></ul></div></li><li id='wp-admin-bar-msreader-follow' class="follow"><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/index.php?page=msreader.php&#038;module=follow&#038;args%5Baction%5D=follow&#038;args%5Bblog_id%5D=5172' title='Follow this site'><span class="ab-icon"></span><span class="current-text">Follow</span><span class="hover-text">Follow</span></a></li></ul><ul id='wp-admin-bar-top-secondary' class="ab-top-secondary ab-top-menu"><li id='wp-admin-bar-search' class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><label for="adminbar-search" class="screen-reader-text">Search</label><input type="submit" class="adminbar-button" value="Search" /></form></div></li><li id='wp-admin-bar-my-account' class="menupop with-avatar"><a class='ab-item' aria-haspopup="true" href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/profile.php'>Howdy, <span class="display-name">TONY WU</span><img alt='' src='https://reflect.ucl.ac.uk/wp-content/default-avatar-32.png?r=G' class='avatar avatar-32' height='32' width='32' /></a><div class="ab-sub-wrapper"><ul id='wp-admin-bar-user-actions' class="ab-submenu"><li id='wp-admin-bar-user-info'><a class='ab-item' tabindex="-1" href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/profile.php'><img alt='' src='https://reflect.ucl.ac.uk/wp-content/default-avatar-48.png?r=G' class='avatar avatar-48' height='48' width='48' /><span class='display-name'>TONY WU</span><span class='username'>tony.wu.19</span></a></li><li id='wp-admin-bar-edit-profile'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-admin/profile.php'>Edit Profile</a></li><li id='wp-admin-bar-logout'><a class='ab-item' href='https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-login.php?action=logout&#038;_wpnonce=a18dca0efe'>Log Out</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="https://reflect.ucl.ac.uk/htctw-2021-marine-marine-group-8/wp-login.php?action=logout&#038;_wpnonce=a18dca0efe">Log Out</a>
+					</div>
+
+		<style type="text/css">
+            #wp-admin-bar-msreader-follow {width: 100px;}
+            #wp-admin-bar-msreader-follow .hover-text {display:none;}
+            #wp-admin-bar-msreader-follow:hover .hover-text {display:inline;}
+            #wp-admin-bar-msreader-follow:hover .current-text {display:none;}
+            #wp-admin-bar-msreader-follow .ab-item .ab-icon:before {content: "\f487"; top: 2px;}
+            #wp-admin-bar-msreader-follow.following .ab-item .ab-icon:before {color: #d54e21;}
+            #wp-admin-bar-msreader-follow.following:hover .ab-item .ab-icon:before {color: #999;}
+            #wp-admin-bar-msreader-follow.following:hover .ab-item {color: #999 !important;}
+            </style>
+</body>
+</html>
